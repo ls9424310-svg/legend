@@ -15,6 +15,15 @@ public class Legend {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+                java.awt.EventQueue.invokeLater(() -> new Dashboard().setVisible(true));
+                  java.awt.EventQueue.invokeLater(() -> new uid().setVisible(true));
+        new Gamechanger().getConnection();
+        new createtable();
+
+              
+
+                
+
     }
     
 }

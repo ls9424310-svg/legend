@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package legend;
+import javax.swing.JPanel;
 
 /**
  *
@@ -17,6 +18,9 @@ public class Dashboard extends javax.swing.JFrame {
      */
     public Dashboard() {
         initComponents();
+        
+       replace(new Homescreen());
+                
     }
 
     /**
@@ -28,22 +32,243 @@ public class Dashboard extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        Home = new javax.swing.JLabel();
+        Notification = new javax.swing.JLabel();
+        profile = new javax.swing.JLabel();
+        Attendence = new javax.swing.JLabel();
+        Fees = new javax.swing.JLabel();
+        timetable = new javax.swing.JLabel();
+        Result = new javax.swing.JLabel();
+        Complaintportal = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        contentPanel = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(153, 0, 153));
+
+        Home.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Home.setForeground(new java.awt.Color(255, 255, 255));
+        Home.setText("Dashboard");
+        Home.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                HomeMouseClicked(evt);
+            }
+        });
+
+        Notification.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Notification.setForeground(new java.awt.Color(255, 255, 255));
+        Notification.setText("Notification");
+        Notification.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NotificationMouseClicked(evt);
+            }
+        });
+
+        profile.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        profile.setForeground(new java.awt.Color(255, 255, 255));
+        profile.setText("Profile");
+        profile.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                profileMouseClicked(evt);
+            }
+        });
+
+        Attendence.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Attendence.setForeground(new java.awt.Color(255, 255, 255));
+        Attendence.setText("Attendence");
+        Attendence.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AttendenceMouseClicked(evt);
+            }
+        });
+
+        Fees.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Fees.setForeground(new java.awt.Color(255, 255, 255));
+        Fees.setText("Fees");
+        Fees.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                FeesMouseClicked(evt);
+            }
+        });
+
+        timetable.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        timetable.setForeground(new java.awt.Color(255, 255, 255));
+        timetable.setText("Time Table");
+        timetable.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                timetableMouseClicked(evt);
+            }
+        });
+
+        Result.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Result.setForeground(new java.awt.Color(255, 255, 255));
+        Result.setText("Result");
+        Result.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ResultMouseClicked(evt);
+            }
+        });
+
+        Complaintportal.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Complaintportal.setForeground(new java.awt.Color(255, 255, 255));
+        Complaintportal.setText("Complaint portal");
+        Complaintportal.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ComplaintportalMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Home, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Notification, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(profile, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Attendence)
+                            .addComponent(Fees)
+                            .addComponent(Result)
+                            .addComponent(Complaintportal)
+                            .addComponent(jLabel8)
+                            .addComponent(timetable))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(Home)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Notification)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(profile)
+                .addGap(12, 12, 12)
+                .addComponent(Attendence)
+                .addGap(12, 12, 12)
+                .addComponent(Fees)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Complaintportal)
+                .addGap(18, 18, 18)
+                .addComponent(timetable)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Result)
+                .addGap(50, 50, 50)
+                .addComponent(jLabel8)
+                .addContainerGap(43, Short.MAX_VALUE))
+        );
+
+        contentPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout contentPanelLayout = new javax.swing.GroupLayout(contentPanel);
+        contentPanel.setLayout(contentPanelLayout);
+        contentPanelLayout.setHorizontalGroup(
+            contentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        contentPanelLayout.setVerticalGroup(
+            contentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(153, 0, 153));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Hackathon Management System");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 704, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel3)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(contentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(contentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void HomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeMouseClicked
+        // TODO add your handling code here:
+        replace(new Homescreen());
+    }//GEN-LAST:event_HomeMouseClicked
+
+    private void NotificationMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NotificationMouseClicked
+        // TODO add your handling code here:
+        replace(new Notificationscreen ());
+    }//GEN-LAST:event_NotificationMouseClicked
+
+    private void profileMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_profileMouseClicked
+        // TODO add your handling code here:
+        replace(new Profilescreen());
+    }//GEN-LAST:event_profileMouseClicked
+
+    private void AttendenceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AttendenceMouseClicked
+        // TODO add your handling code here:
+        replace(new Attendence());
+    }//GEN-LAST:event_AttendenceMouseClicked
+
+    private void FeesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FeesMouseClicked
+        // TODO add your handling code here:
+        replace(new Fees());
+    }//GEN-LAST:event_FeesMouseClicked
+
+    private void timetableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_timetableMouseClicked
+        // TODO add your handling code here:
+        replace(new Timetable());
+    }//GEN-LAST:event_timetableMouseClicked
+
+    private void ResultMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ResultMouseClicked
+        // TODO add your handling code here:
+        replace(new Result());
+    }//GEN-LAST:event_ResultMouseClicked
+
+    private void ComplaintportalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ComplaintportalMouseClicked
+        // TODO add your handling code here:
+        replace(new Complaintportal());
+    }//GEN-LAST:event_ComplaintportalMouseClicked
+public void replace(JPanel panel){
+  panel.setSize(contentPanel.getSize());
+  panel.setLocation(0,0);
+  contentPanel.removeAll();
+  contentPanel.add(panel);
+  contentPanel.revalidate();
+  contentPanel.repaint();
+}
     /**
      * @param args the command line arguments
      */
@@ -70,5 +295,18 @@ public class Dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Attendence;
+    private javax.swing.JLabel Complaintportal;
+    private javax.swing.JLabel Fees;
+    private javax.swing.JLabel Home;
+    private javax.swing.JLabel Notification;
+    private javax.swing.JLabel Result;
+    private javax.swing.JPanel contentPanel;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel profile;
+    private javax.swing.JLabel timetable;
     // End of variables declaration//GEN-END:variables
 }
